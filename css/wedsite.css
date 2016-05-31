@@ -1,0 +1,53 @@
+@font-face {font-family: "Encorpada Classic W01 Light It";
+  src: url("../fonts/b5621f0e559c3487c230afc109764d93.eot"); /* IE9*/
+  src: url("../fonts/b5621f0e559c3487c230afc109764d93.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/b5621f0e559c3487c230afc109764d93.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/b5621f0e559c3487c230afc109764d93.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/b5621f0e559c3487c230afc109764d93.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/b5621f0e559c3487c230afc109764d93.svg#Encorpada Classic W01 Light It") format("svg"); /* iOS 4.1- */
+}
+
+body {
+  padding-top: 50px;
+
+}
+.wed-head {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.wed-head h1, 
+.wed-head h2{
+	font-family:"Encorpada Classic W01 Light It";
+	font-style:normal;
+	font-weight: bold;
+}
+
+.bg-1, .bg-3 {
+  background-color:hsla(180, 50%, 50%, 0.1);
+}
+
+.bg-4, .bg-2 {
+  background-color:hsla(290,60%,70%,0.3);
+}
+
+.cratebarrel
+{
+    background-image: url('../images/cratebarrel.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+}
+
+.gmap-container {
+	height: 450px;
+	width: 450px;
+	background-color: #FFF;
+	position: relative;
+}
+
+#gmap {
+	height: 100%;
+	width: 100%;
+	background-color: #CCC;
+	margin: 20px;
+}
