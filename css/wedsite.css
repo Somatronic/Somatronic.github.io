@@ -17,7 +17,9 @@ body {
 }
 
 .wed-head h1, 
-.wed-head h2{
+.wed-head h2,
+.wed-head h3
+{
 	font-family:"Encorpada Classic W01 Light It";
 	font-style:normal;
 	font-weight: bold;
@@ -49,4 +51,34 @@ body {
 	width: 100%;
 	background-color: #CCC;
 	margin: 20px;
+}
+
+
+figure 
+    {
+        margin-top:20px;
+        position:relative;
+        width: 100%;
+        overflow:hidden;
+    }
+
+
+figure img
+    {
+        margin-top:20px;
+        position: absolute;
+        top: calc(50% - 125px);
+        left: calc(50% - 190px);
+        }
+
+
+@media (min-width: 425px) {
+
+.gmap-container { 
+  height: 380px;
+  width: 380px;
+  position: relative;
+
+}
+
 }
