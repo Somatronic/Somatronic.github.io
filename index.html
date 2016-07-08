@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--   
+    This code was implemented by Eric Soma on 07/08/2016. The site has been developed using HTML5, CSS3 and the bootstrap framework. 
+
+    Updates:
+      Some outdated JS exists in this file which needs removed. 
+      
+    -->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="This site was created to host wedding details for the Soma/Newman wedding">
     <meta name="author" content="Eric Soma aka Somatronic">
@@ -30,7 +37,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -55,32 +61,20 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
     <div class="container bg-1"> <!-- want to use the big-1 class later -->
       <div style="background:transparent !important" class="jumbotron">
         <div class="wed-head">
           <h1>Eric + Loriana</h1>
           <p class="lead">Saturday December 3, 2016</p>
-
           <div id="wed-Carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              
               <!-- Add carousel indicators here -->
-
             </ol>
           </div>
-
-
-
-
           <img class="img-responsive center-block img-rounded" src="images/banner2.jpg" alt="Chania">
         </div>
       </div>
     </div>
-
-
-
-
     <div class="container text-center bg-2"> <!-- need to implement bg-2 --> 
       <div class="row">
         <div class="col-sm-12">
@@ -95,7 +89,6 @@
         </div>
       </div>
     </div>
-
     <div class="container text-center bg-3"> <!-- need to implement bg-3 --> 
       <div class="wed-head">
       <h2>Event Details</h2>
@@ -104,9 +97,7 @@
           <div class="wed-head">
             <p>The ceremony and receiption will be held at the Grange Insurance Audubon Center in Columbus, Ohio. The ceremony will begin at 5:00PM followed by cocktails, dinner and dancing.
             </p>
-
-            <img src="images/auduboncenter.jpg" class="img-responsive center-block img-rounded" alt="Cinque Terre" width="75%" height="75%">
-            
+               <img src="images/auduboncenter.jpg" class="img-responsive center-block img-rounded" alt="Cinque Terre" width="75%" height="75%">
             <p>Date: Saturday, December 3rd, 2016 @ 5:00 PM EST</p>
             <p>Address: 505 W Whittier St, Columbus, OH 43215 </p>
             <p>Parking: On Site </p>
@@ -114,19 +105,16 @@
             <p>Age: 21 and over </P>
             <p>Dancing: Required! </p>
           </div>
-        </div>  
-
+        </div>
+        <!-- Commented out due to issues in iOS and Andriod devices --> 
         <!--div class="col-sm-6">  
           <div class="gmap-container">
             <div id="gmap"></div>
           </div--><!-- /.gmap-container-->
         <!--/div-->
-
         <div class="col-sm-6"> <!-- static google map div -->
           <div class="figure img">
-
-              <h3>Wedding Location:</h3>
-
+            <h3>Wedding Location:</h3> <!-- used for padding -->
             <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?center=39.946309,-83.009829&amp;zoom=14&amp;size=320x400" alt="Columbus, Ohio">
           </div>
           <br>
@@ -134,52 +122,50 @@
         </div>
       </div>
     </div>
-
     <div class="container text-center bg-4"> <!-- This section defines the Where to Stay section -->
       <div class="wed-head">
-        <h2>Where to Stay</h2>
-        <p>We have reserved a block of rooms at the Meridien hotel. It is a boutique hotel located in the Short North arts district. You can follow <a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">this link</a> to book, or call the hotel directly and request a room for the Newman Soma Wedding. The rate is $209 per night. There are other downtown hotel options which would be close to the wedding as well. </p>
-
-        <h3><a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">LE MÉRIDIEN COLUMBUS, THE JOSEPH</a></h3>
-        <p>620 North High Street. Columbus, OH 43215, United States</p>
-        <p>Phone: <a href="tel:+16142270100">(1)(614) 227-0100</a></p>
-
-
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">  
+          <h2>Where to Stay</h2>
+              <p>We have reserved a block of rooms at the Meridien hotel. It is a boutique hotel located in the Short North arts district. You can follow <a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">this link</a> to book, or call the hotel directly and request a room for the Newman Soma Wedding. The rate is $209 per night. There are other downtown hotel options which would be close to the wedding as well. </p>
+            <h3>
+              <a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">LE MÉRIDIEN COLUMBUS, THE JOSEPH</a>
+            </h3>
+          <p>620 North High Street. Columbus, OH 43215, United States</p>
+          <p>Phone: <a href="tel:+16142270100">(1)(614) 227-0100</a></p>
+        </div>          
         <img src="images/Le-Meridian-Exterior-North-View-1024x682.jpg" class="img-responsive center-block img-rounded" alt="Cinque Terre" width="60%" height="60%">
         <br>
         <br>
       </div>
     </div>
-
     <div class="container text-center bg-3"><!-- need to implement bg-4 -->  
       <div class="col-md-12 text-center">
         <div class="wed-head">
           <h2>Registry Info</h2>
         </div>
-        <br>
       <div class="col-md-4 text-center">
         <br>
         <br>
-        <br> 
         <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449">
-          <img class="img-responsive center-block img-rounded" src="images/cratebarrel.jpg">
+          <img class="img-responsive center-block img-rounded" src="images/CB_logo.gif">
         </a>
       </div>
+      <br>
       <div class="col-md-4 text-center">
-        <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449">
+        <a href="https://secure.williams-sonoma.com/registry/55j85zshph/registry-list.html">
           <img class="img-responsive center-block img-rounded" src="images/williams-sonoma.png">
         </a>
       </div>
       <div class="col-md-4 text-center">
         <br>
         <br>
-        <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449">
+        <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=543473328&pwsurl=">
           <img class="img-responsive center-block img-rounded" src="images/bed-bath-beyond-wedding-registry.jpg">
         </a>
       </div>
         <br>
-        <br>
-
         <!--div class="list-group">
           <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449" >
             <img class="list-group-item active" src="images/cratebarrel.jpg">
@@ -189,8 +175,6 @@
         </div-->
       </div>
     </div><!-- /.container -->
-
-
     <div class="container text-center bg-3"><!-- footer information -->  
       <div class="col-md-3"></div>
       <div class="col-md-6 text-center">
@@ -201,8 +185,6 @@
       </div>
       <div class="col-md-3"></div>
     </div>
-
-
 
 <!-- Google Maps API Implementation -->
 
