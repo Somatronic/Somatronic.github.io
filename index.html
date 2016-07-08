@@ -48,9 +48,9 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About Columbus</a></li>
+            <!--li><a href="#about">About Columbus</a></li--> <!-- add later -->
             <li><a href="rsvp.html">RSVP</a></li>
-            <li><a href="#dance">Dance Moves</a></li>
+            <!--li><a href="#dance">Dance Moves</a></li--> <!-- add later -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -97,8 +97,8 @@
     </div>
 
     <div class="container text-center bg-3"> <!-- need to implement bg-3 --> 
+      <div class="wed-head">
       <h2>Event Details</h2>
-      
       <div class="row">
         <div class="col-sm-6">
           <div class="wed-head">
@@ -110,33 +110,99 @@
             <p>Date: Saturday, December 3rd, 2016 @ 5:00 PM EST</p>
             <p>Address: 505 W Whittier St, Columbus, OH 43215 </p>
             <p>Parking: On Site </p>
-            <p>Attire: Formal </p>
+            <p>Attire: Semi-Formal </p>
             <p>Age: 21 and over </P>
             <p>Dancing: Required! </p>
           </div>
         </div>  
-        <div class="col-sm-6">  
+
+        <!--div class="col-sm-6">  
           <div class="gmap-container">
             <div id="gmap"></div>
-          </div><!-- /.gmap-container-->
+          </div--><!-- /.gmap-container-->
+        <!--/div-->
+
+        <div class="col-sm-6"> <!-- static google map div -->
+          <div class="figure img">
+
+              <h3>Wedding Location:</h3>
+
+            <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?center=39.946309,-83.009829&amp;zoom=14&amp;size=320x400" alt="Columbus, Ohio">
+          </div>
+          <br>
+        </div>
         </div>
       </div>
     </div>
 
-    <div class="container text-center bg-4"><!-- need to implement bg-4 -->  
+    <div class="container text-center bg-4"> <!-- This section defines the Where to Stay section -->
+      <div class="wed-head">
+        <h2>Where to Stay</h2>
+        <p>We have reserved a block of rooms at the Meridien hotel. It is a boutique hotel located in the Short North arts district. You can follow <a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">this link</a> to book, or call the hotel directly and request a room for the Newman Soma Wedding. The rate is $209 per night. There are other downtown hotel options which would be close to the wedding as well. </p>
+
+        <h3><a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">LE MÉRIDIEN COLUMBUS, THE JOSEPH</a></h3>
+        <p>620 North High Street. Columbus, OH 43215, United States</p>
+        <p>Phone: <a href="tel:+16142270100">(1)(614) 227-0100</a></p>
+
+
+        <img src="images/Le-Meridian-Exterior-North-View-1024x682.jpg" class="img-responsive center-block img-rounded" alt="Cinque Terre" width="60%" height="60%">
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="container text-center bg-3"><!-- need to implement bg-4 -->  
       <div class="col-md-12 text-center">
         <div class="wed-head">
           <h2>Registry Info</h2>
         </div>
-        <div class="list-group">
-          <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449" class="list-group-item active">
-            <img src="images/cratebarrel.jpg">
+        <br>
+      <div class="col-md-4 text-center">
+        <br>
+        <br>
+        <br> 
+        <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449">
+          <img class="img-responsive center-block img-rounded" src="images/cratebarrel.jpg">
+        </a>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449">
+          <img class="img-responsive center-block img-rounded" src="images/williams-sonoma.png">
+        </a>
+      </div>
+      <div class="col-md-4 text-center">
+        <br>
+        <br>
+        <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449">
+          <img class="img-responsive center-block img-rounded" src="images/bed-bath-beyond-wedding-registry.jpg">
+        </a>
+      </div>
+        <br>
+        <br>
+
+        <!--div class="list-group">
+          <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449" >
+            <img class="list-group-item active" src="images/cratebarrel.jpg">
           </a>
           <a href="#" class="list-group-item">Second item</a>
           <a href="#" class="list-group-item">Third item</a>
-        </div>
+        </div-->
       </div>
     </div><!-- /.container -->
+
+
+    <div class="container text-center bg-3"><!-- footer information -->  
+      <div class="col-md-3"></div>
+      <div class="col-md-6 text-center">
+        <br>
+        <br>
+        <br>
+        <p>This website was built by Somatronic in HTML5, CSS3 and the Bootstrap framework. The site is currently being hosted on Github. For more information, email him at <a href="mailto:eric.soma1@gmail.com">eric.soma1@gmail.com</a> </p>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+
 
 <!-- Google Maps API Implementation -->
 
