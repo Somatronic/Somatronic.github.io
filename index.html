@@ -95,10 +95,11 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="wed-head">
-            <p>The ceremony and receiption will be held at the Grange Insurance Audubon Center in Columbus, Ohio. The ceremony will begin at 5:00PM followed by cocktails, dinner and dancing.
+            <p>The ceremony and receiption will be held at the Grange Insurance Audubon Center in Columbus, Ohio. The ceremony will begin at 5:30 PM followed by cocktails, dinner and dancing.
             </p>
                <img src="images/auduboncenter.jpg" class="img-responsive center-block img-rounded" alt="Cinque Terre" width="75%" height="75%">
-            <p>Date: Saturday, December 3rd, 2016 @ 5:00 PM EST</p>
+            <br>
+            <p>Date: Saturday, December 3rd, 2016 @ 5:30 PM EST</p>
             <p>Address: 505 W Whittier St, Columbus, OH 43215 </p>
             <p>Parking: On Site </p>
             <p>Attire: Semi-Formal </p>
@@ -115,7 +116,13 @@
         <div class="col-sm-6"> <!-- static google map div -->
           <div class="figure img">
             <h3>Wedding Location:</h3> <!-- used for padding -->
-            <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?center=39.946309,-83.009829&amp;zoom=14&amp;size=320x400" alt="Columbus, Ohio">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JQsB5nMYPE719n_y8KdTwH2CaNM" scrolling="no" width="100%" height="400" class="myIframe">
+            </iframe>
+            <script type="text/javascript" language="javascript"> 
+            $('.myIframe').css('height', $(window).height()+'px');
+            </script>
+            <!--
+            <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?center=39.946309,-83.009829&amp;zoom=14&amp;size=320x400" alt="Columbus, Ohio"> -->
           </div>
           <br>
         </div>
@@ -188,7 +195,7 @@
 
 <!-- Google Maps API Implementation -->
 
-    <script>
+    <!--script>
       var wedlat = 39.9463099;
       var wedlong = -83.00982920000001;
       var wedloc = {lat: wedlat, lng: wedlong};
@@ -208,8 +215,8 @@
                 });
                 infowindow.open(map, marker);
       }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTWR0pCsBxKG3-Bd-q8DLSCLxIpJXp_5U&callback=initMap" async defer></script>
+    </script-->
+    <!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTWR0pCsBxKG3-Bd-q8DLSCLxIpJXp_5U&callback=initMap" async defer></script-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
