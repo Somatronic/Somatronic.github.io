@@ -12,11 +12,11 @@
       
     -->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="This site was created to host wedding details for the Soma/Newman wedding">
+    <meta name="description" content="This site was created to host wedding details for the Yoder/Russell wedding">
     <meta name="author" content="Eric Soma aka Somatronic">
     <!--link rel="icon" href="../../favicon.ico"-->
 
-    <title>#losowed</title>
+    <title>#yodarussell</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,15 +29,17 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Pinyon+Script" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville" rel="stylesheet">
   </head>
   <body>
+    <!-- This section defines the navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -48,64 +50,258 @@
             <span class="icon-bar"></span>
           </button>
           <a style="padding-top: 7px"class="navbar-brand" href="#"> <!-- Custom padding added to navbar-brand-->
-            <img style="height: 35px; margin-top: 0px" class="img-responsive center-block img-rounded" src="images/losowed-hashtag.jpg" alt="Chania">
+            <!--img style="height: 35px; margin-top: 0px" class="img-responsive center-block img-rounded" src="images/losowed-hashtag.jpg" alt="Chania"-->
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <!--li><a href="#about">About Columbus</a></li--> <!-- add later -->
-            <li><a href="rsvp.html">RSVP</a></li>
-            <!--li><a href="#dance">Dance Moves</a></li--> <!-- add later -->
+            <!-- note to self: might want to move style into css file -->
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="photos.html">PHOTOS</a></li--> <!-- add later -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
     <div class="container bg-1"> <!-- want to use the big-1 class later -->
+          <!-- Trigger the modal with a button -->
+      <div style="padding-top: 20px; font-family: 'Lato', sans-serif;"class="col-sm-12 text-center">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">RSVP HERE</button>
+      </div>
+        <!-- Start Custom Google Form -->
+
+
+          <!-- Modal Starts Here -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+          <div class="modal-content bg-3">
+            <form action="https://docs.google.com/forms/d/1_La3ygFAuP2wl95-1vm4fEu28N8Cyi-5Mg658bpeqKw/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="form-horizontal">
+               <div class="form-group">
+                 <ol role="list" class="ss-question-list" style="padding-left: 0;">
+                   <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item ss-item-required ss-radio">
+                       <div class="ss-form-entry">
+                       <div class="text-center">
+                         <label class="ss-q-item-label" for="entry_1275419724">
+                           <div class="ss-q-title wed-head"><h2>Will you attend the wedding?</h2>
+                         <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                         <!--span class="ss-required-asterisk" aria-hidden="true">*</span--><!--maybe remove or add custom required indicator --></div>
+                         <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                         </label>                         
+                          <ul style="list-style: none;" class="ss-choices" role="radiogroup" aria-label="Can you attend?  ">
+                            <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.877086558" value="Yes,  I&#39;ll be there" id="group_877086558_1" role="radio" class="ss-q-radio" aria-label="Yes,  I&#39;ll be there" required="" aria-required="true"></span>
+                              <span class="ss-choice-label">Yes,  I&#39;ll be there</span>
+                              </label>
+                            </li>
+                            <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.877086558" value="Sorry, can&#39;t make it" id="group_877086558_2" role="radio" class="ss-q-radio" aria-label="Sorry, can&#39;t make it" required="" aria-required="true"></span>
+                              <span class="ss-choice-label">Sorry, can&#39;t make it</span>
+                              </label>
+                            </li>
+                          </ul>
+                         <div class="error-message" id="1275419724_errorMessage"></div>
+                         <!--div class="required-message">This is a required question</div--> <!-- might be able to remove this -->
+                         <br>
+                         <br>
+                       </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item ss-item-required ss-paragraph-text">
+                       <div class="ss-form-entry">
+                       <div class="text-center">
+                         <label class="ss-q-item-label" for="entry_1498135098">
+                           <div class="ss-q-title wed-head"><h2>What are the names of people attending?</h2>
+                         <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                         <!--span class="ss-required-asterisk" aria-hidden="true">*</span--> <!-- remove?? --> </div>
+                         <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                         </label>
+                         <br>
+                         <textarea name="entry.1498135098" rows="3" cols="40" class="ss-q-long" id="entry_1498135098" dir="auto" aria-label="What are the names of           people attending?" aria-required="true" required=""></textarea>
+                         <div class="error-message" id="905896922_errorMessage"></div>
+                         <!--div class="required-message">This is a required question</div--><!-- remove?? -->     
+                         <br>
+                         <br>
+                       </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-paragraph-text">
+                       <div class="text-center">
+                       <div class="ss-form-entry">
+                         <label class="ss-q-item-label" for="entry_2606285">
+                           <div class="ss-q-title wed-head"><h2>Would you like to request a song?</h2></div>
+                           <div class="ss-q-help ss-secondary-text" dir="auto">Please enter a song title request (ex. Michael Jackson/Thriller)</div>
+                         </label>
+                         <br>
+                         <br>
+                         <textarea name="entry.2606285" rows="2" cols="36" class="ss-q-long" id="entry_2606285" dir="auto" aria-label="Would you like to request a           song? (ex. Michael Jackson/Thriller) Please enter a song title request "></textarea>
+                         <div class="error-message" id="109089657_errorMessage"></div>
+                         <!--div class="required-message">This is a required question</div-->
+                         <br>
+                         <br>
+                         </div>
+                         </div>
+                     </div>
+                   </div>
+                   <input type="hidden" name="draftResponse" value="[,,&quot;3839417406228175629&quot;]
+                     ">
+                   <input type="hidden" name="pageHistory" value="0">
+                   <input type="hidden" name="fbzx" value="3839417406228175629">
+                   <div class="ss-item ss-navigate">
+                     <table id="navigation-table">
+                       <tbody>
+                         <tr>
+                           <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                             <div class="container">
+                             <div class="text-center">
+                                <div class="col-sm-2">
+                                </div>
+                               <div class="col-sm-2">
+                                 <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action form-control">
+                               </div>
+                             </div>                       
+                             </div>
+                           </td>
+                         </tr>
+                       </tbody>
+                     </table>
+                   </div>
+                 </ol>
+               </div>
+          </form>
+          <!-- End Custom Google Form -->
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        <!-- Modal Ends Here -->
+
       <div style="background:transparent !important" class="jumbotron">
         <div class="wed-head">
-          <h1>Eric + Loriana</h1>
-          <p class="lead">Saturday December 3, 2016</p>
+          <h1 class="border">EMILY <span style="font-family:'Libre Baskerville', serif; font-size: 24px; margin-top: -10px; letter-spacing: -1px;">AND</span> DAVID</h1>
+          <h2 style="margin-bottom: 20px">Saturday, March 11, 2017</h2>
+          <!-- why is this carousel slide here?? there also appears to be a wed-Carousel ID that is not being used -->
           <div id="wed-Carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <!-- Add carousel indicators here -->
             </ol>
           </div>
-          <img class="img-responsive center-block img-rounded" src="images/banner2.jpg" alt="Chania">
+          <img style="border-radius: 24px;" class="img-responsive center-block img-rounded" src="images/davidandemily_sm.jpg" alt="Chania">
         </div>
       </div>
     </div>
     <div class="container text-center bg-2"> <!-- need to implement bg-2 --> 
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 wed-head">
+          <h2>About Us</h2>
+        </div>
+        <div class="col-sm-4 wed-head">
+          <h2 class="border">His Story:</h2>
+          <p>September 22, 2010 is a date I will never forget. That was the day I met my future wife. We had been
+
+exchanging e-mails for a few weeks (we met on match.com) and decided it was time to meet in person.
+
+The decision had been made to meet at Antrim Park to take a short bike ride down the Olentangy Green
+
+Ways Trail. I was a little nervous. First impressions are important and I wanted to make it good.
+
+I arrived at the agreed upon location at the agreed upon time. I was early so I waited…and waited…and
+
+waited. After about 30 minutes I decided that she wasn’t going to show. I packed up my bike and went
+
+home. The first thing I did when I arrived home was e-mail her and ask her why she didn’t come to the
+
+date? She was very apologetic and explained she had been required to seek shelter at work due to a
+
+possible impending tornado. That seemed reasonable enough, despite the fact that where I was the
+
+weather was perfect! We did not let the opportunity to meet pass us by and decided to go to my
+
+favorite Mexican Restaurant: Las Margaritas. I don’t remember what she ordered, or what she was
+
+wearing, but I remember thinking Emily could be the one for me.</p>
+        </div>
+        <div class="col-sm-4">
           <div class="wed-head">
-            <h2>About Us</h2>
-            <p>We met at a record store, Used Kids Records, after connecting on match.com. We   scouted out Motown and Lou Reed albums and finished the night with hot drinks at  Stauf's in Grandview. After a second date that started with a bike ride to the   Columbus Museum of Art, we were both intrigued and having a great time sharing laughs,  interests, and activities. Our relationship continued as we spent time getting to know   each other, meeting friends and families, shopping for more records, eating lots of   good food, and going on adventures (Pacific Northwest, French Canada, Puerto Rico).   Loriana is learning to golf, and tell jokes. Eric is learning to cook, and play tennis.  We are both honing our scuba diving skills.</p>
             <br>
-            <img class="img-responsive center-block img-rounded"src="images/npr_record_sm.jpg"></img>
+            <img class="img-responsive center-block img-rounded"src="images/greentreebybrook_sm.jpg"></img>
             <br>
-            <p>On a beautiful sunny day in February,  we went for a walk at the Scioto Audubon Metro Park. While Loriana was admiring the  view of the Columbus Skyline, Eric got down on one knee and... He may not have   finished the complete question before Loriana excitedly said, "Yes!"</p>
           </div>
+        </div>
+        <div class="col-sm-4 wed-head">
+          <h2 class="border">Her Story:</h2>
+          <p>In September of 2010, I was perusing messages on Match.com. I got an email from a new cute guy and I
+
+thought I would check out his profile further. His profile had a quote “You’ll miss 100% of the chances
+
+you don’t take.,” which struck me as such a humble and endearing perspective to take in such a crazy
+
+dating world. I’m not sure if it was through David’s photos or our correspondence I learned of our
+
+shared passion for bicycles and being active.
+
+Our first date was supposed to be a bike ride through Antrim Park, however I guess looking back on it, I
+
+technically stood him up. I was kept late at work in the Tornado Shelter because a tornado indeed had
+
+touched down in Columbus that afternoon. I remember feeling terrible that I was not going to make it
+
+but I was pretty sure he wasn’t going to be crazy enough to go either. I didn’t have his phone number so
+
+I sent a message through “Match” to explain that I’m not scared of riding in less than perfect weather,
+
+but that I usually draw the line at tornados. I apologized and then left my phone number. I held my
+
+breath that he would call and he did! He called later that evening and told me he was there looking for
+
+me! We were both hungry so we met at a Mexican restaurant instead. I remember how understanding,
+
+genuine and kind he was that evening, qualities that I still love about David today. We did go on a bike
+
+ride for our second date and for many dates to follow.</p>
         </div>
       </div>
     </div>
     <div class="container text-center bg-3"> <!-- need to implement bg-3 --> 
       <div class="wed-head">
       <h2>Event Details</h2>
+      <div class="col-sm-12">
+        
+        <img style="margin-bottom: 20px; width: 75%" src="http://www.worthingtonhills.com/getattachment/dd4d05eb-4e02-41fe-8e2d-f72c7ca1900e/image2.aspx" class="img-responsive center-block img-rounded" alt="Cinque Terre">
+            <p>THE CEREMONY AND RECEPTION WILL BE HELD AT THE WORTHINGTON HILLS COUNTRY CLUB IN COLUMBUS, OHIO. ARRIVE BY 4:30 PM FOR A PRE-CEREMONY COCKTAIL, FOLLOWED BY THE CEREMONY AT 5:00 PM.</p>
+      </div>
       <div class="row">
         <div class="col-sm-6">
           <div class="wed-head">
-            <p>The ceremony and receiption will be held at the Grange Insurance Audubon Center in Columbus, Ohio. The ceremony will begin at 5:30 PM followed by cocktails, dinner and dancing.
-            </p>
-               <img src="images/auduboncenter.jpg" class="img-responsive center-block img-rounded" alt="Cinque Terre" width="75%" height="75%">
-            <br>
-            <p>Date: Saturday, December 3rd, 2016 @ 5:30 PM EST</p>
-            <p>Address: 505 W Whittier St, Columbus, OH 43215 </p>
-            <p>Parking: On Site </p>
-            <p>Attire: Semi-Formal </p>
-            <p>Age: 21 and over </P>
-            <p>Dancing: Required! </p>
+            <div class="text-left">
+              <h2 style="font-weight: bold">Date</h4>
+              <ul>
+                <li>SATURDAY, MARCH 11, 2017</li>
+              </ul>
+              <h3 style="font-weight: bold">Start times</h4>
+              <ul>
+                <li>4:30 PM - PRE-CEREMONY COCKTAILS</li>
+                <li>5:00 PM - THE CEREMONY BEGINS</li>
+              </ul>
+              <h3 style="font-weight: bold">Address</h4>
+              <ul>
+                <li>WORTHINGTON HILLS COUNTRY CLUB<br>
+                920 CLUBVIEW BLVD SOUTH<br>               COLUMBUS, OHIO 43235</li>
+              </ul>
+            </div>
           </div>
+        </div>
+        <div class="col-sm-6">
+          <a href="http://www.worthingtonhills.com/">
+            <img style="padding: 40px;" class="img-responsive center-block" src="images/worthingtoncc_img.jpg">
+          </a>
         </div>
         <!-- Commented out due to issues in iOS and Andriod devices --> 
         <!--div class="col-sm-6">  
@@ -113,10 +309,10 @@
             <div id="gmap"></div>
           </div--><!-- /.gmap-container-->
         <!--/div-->
-        <div class="col-sm-6"> <!-- static google map div -->
+        <div class="col-sm-12"> <!-- static google map div -->
           <div class="figure img">
-            <h3>Wedding Location:</h3> <!-- used for padding -->
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JQsB5nMYPE719n_y8KdTwH2CaNM" scrolling="no" width="100%" height="400" class="myIframe">
+            <h3>Wedding Map:</h3> <!-- used for padding -->
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1H9LzqPqNU2n0H9dDbDtqpqWgyyk" scrolling="no" width="100%" height="400" class="myIframe">
             </iframe>
             <script type="text/javascript" language="javascript"> 
             $('.myIframe').css('height', $(window).height()+'px');
@@ -135,54 +331,41 @@
         </div>
         <div class="col-md-8">  
           <h2>Where to Stay</h2>
-              <p>We have reserved a block of rooms at the Meridien hotel. It is a boutique hotel located in the Short North arts district. You can follow <a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">this link</a> to book, or call the hotel directly and request a room for the Newman Soma Wedding. The rate is $209 per night. There are other downtown hotel options which would be close to the wedding as well. </p>
-            <h3>
-              <a href="https://www.starwoodmeeting.com/Book/NewmanSomaWedding">LE MÉRIDIEN COLUMBUS, THE JOSEPH</a>
-            </h3>
-          <p>620 North High Street. Columbus, OH 43215, United States</p>
-          <p>Phone: <a href="tel:+16142270100">(1)(614) 227-0100</a></p>
+              <p>WE HAVE RESERVED A BLOCK OF ROOMS AT THE HYATT PLACE COLUMBUS/WORTHINGTON HOTEL. IT IS LOCATED IN WORTHINGTON AT THE CORSS ROADS OF I-270 AND ROUTE 23. YOU CAN RESERVE BY CALLING THE HOTEL DIRECTLY AND REQUEST A ROOM FOR THE RUSSELL/YODER WEDDING.</p>
+            <h4>
+              <a href="http://columbusworthington.place.hyatt.com/en/hotel/home.html?corp_id=G-RUYO">HYATT PLACE COLUMBUS/WORTHINGTON</a>
+            </h4>
+          <p>7490 VANTAGE DRIVE. COLUMBUS, OHIO, USA, 43235</p>
+          <p>Phone: <a href="tel:+1614 846 4355">(1)(614) 846-4355</a></p>
         </div>          
-        <img src="images/Le-Meridian-Exterior-North-View-1024x682.jpg" class="img-responsive center-block img-rounded" alt="Cinque Terre" width="60%" height="60%">
         <br>
         <br>
       </div>
     </div>
     <div class="container text-center bg-3"><!-- need to implement bg-4 -->  
-      <div class="col-md-12 text-center">
-        <div class="wed-head">
-          <h2>Registry Info</h2>
-        </div>
-      <div class="col-md-4 text-center">
-        <br>
-        <br>
-        <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449">
-          <img class="img-responsive center-block img-rounded" src="images/CB_logo.gif">
+      <div class="col-sm-12 text-enter wed-head">
+        <h2>Registry Info</h2>
+      </div>
+      <div class="col-sm-4 text-center wed-head">
+        <a href="https://www.macys.com/wgl/registry/guest/2336749">
+          <img class="img-responsive center-block img-rounded" src="images/macys_comp.jpg">
         </a>
       </div>
-      <br>
-      <div class="col-md-4 text-center">
-        <a href="https://secure.williams-sonoma.com/registry/55j85zshph/registry-list.html">
-          <img class="img-responsive center-block img-rounded" src="images/williams-sonoma.png">
+      <div class="col-sm-4 text-center wed-head">
+        <a href="http://www.target.com/gift-registry/giftgiver?registryId=6f4b71c3168748d3bf31a4ad1fc3094e">
+          <img class="img-responsive center-block img-rounded" src="images/target_logo_sm.jpg">
         </a>
       </div>
-      <div class="col-md-4 text-center">
-        <br>
-        <br>
-        <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=543473328&pwsurl=">
-          <img class="img-responsive center-block img-rounded" src="images/bed-bath-beyond-wedding-registry.jpg">
+      <div class="col-sm-4 text-center wed-head">
+        <a href="https://www.rei.com/GiftRegistryDetails/14773880">
+          <img class="img-responsive center-block img-rounded" src="images/rei_comp_sm.jpg">
         </a>
-      </div>
-        <br>
-        <!--div class="list-group">
-          <a href="http://www.crateandbarrel.com/gift-registry/loriana-newman-  and-eric-soma/r5528449" >
-            <img class="list-group-item active" src="images/cratebarrel.jpg">
-          </a>
-          <a href="#" class="list-group-item">Second item</a>
-          <a href="#" class="list-group-item">Third item</a>
-        </div-->
       </div>
     </div><!-- /.container -->
-    <div class="container text-center bg-3"><!-- footer information -->  
+    
+
+    <!-- designer footer blob -->
+    <div class="container text-center bg-2">
       <div class="col-md-3"></div>
       <div class="col-md-6 text-center">
         <br>

@@ -1,12 +1,3 @@
-@font-face {font-family: "Encorpada Classic W01 Light It";
-  src: url("../fonts/b5621f0e559c3487c230afc109764d93.eot"); /* IE9*/
-  src: url("../fonts/b5621f0e559c3487c230afc109764d93.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/b5621f0e559c3487c230afc109764d93.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/b5621f0e559c3487c230afc109764d93.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/b5621f0e559c3487c230afc109764d93.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/b5621f0e559c3487c230afc109764d93.svg#Encorpada Classic W01 Light It") format("svg"); /* iOS 4.1- */
-}
-
 body {
   padding-top: 50px;
 
@@ -20,34 +11,61 @@ iframe {
   text-align: center;
 }
 
-.wed-head h1, 
+.wed-head h1
+{
+  font-family: 'Lato', sans-serif;
+	font-style:normal;
+	font-weight: normal;
+  letter-spacing: 8px;
+}
+
 .wed-head h2,
 .wed-head h3
 {
-	font-family:"Encorpada Classic W01 Light It";
-	font-style:normal;
-	font-weight: bold;
+  font-family: 'Pinyon Script', cursive;
+  font-style:normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.wed-head h4
+{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style:normal;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .bg-1, .bg-3 {
-  background-color:hsla(180, 50%, 50%, 0.1);
+  background-color:#b5ccc1;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #DAD7C5;
+  border-right-width: 20px;
+  border-left-width: 20px;
+
 }
 
 .bg-4, .bg-2 {
-  background-color:hsla(290,60%,70%,0.3);
-}
-
-.cratebarrel
-{
-    background-image: url('../images/cratebarrel.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 10px;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #DAD7C5;
+  border-right-width: 20px;
+  border-left-width: 20px;
 }
 
 .gmap-container {
 	height: 450px;
 	width: 450px;
 	position: relative;
+}
+
+.border {
+  border-top: double #DAD7C5 5px;
+  border-bottom: double #DAD7C5 5px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
 }
 
 #gmap {
@@ -58,31 +76,52 @@ iframe {
 }
 
 
-figure 
-    {
-        margin-top:20px;
-        position:relative;
-        width: 100%;
-        overflow:hidden;
-    }
+figure {
+  margin-top:20px;
+  position:relative;
+  width: 100%;
+  overflow:hidden;
+}
 
 
-figure img
-    {
-        margin-top:20px;
-        position: absolute;
-        top: calc(50% - 125px);
-        left: calc(50% - 190px);
-        }
+figure img {
+  margin-top:20px;
+  position: absolute;
+  top: calc(50% - 125px);
+  left: calc(50% - 190px);
+}
 
+li,
+p {
+  font-family: 'Libre Baskerville', serif;
+}
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
 
 .gmap-container { 
   height: 380px;
   width: 380px;
   position: relative;
 
+}
+
+.bg-1, .bg-3 {
+  background-color:white;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #e5d49e;
+  border-right-width: 0px;
+  border-left-width: 0px;
+
+}
+
+.bg-4, .bg-2 {
+  background-color:#81a895;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #e5d49e;
+  border-right-width: 0px;
+  border-left-width: 0px;
 }
 
 }
