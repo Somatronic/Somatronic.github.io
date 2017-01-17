@@ -96,6 +96,19 @@ p {
   font-family: 'Libre Baskerville', serif;
 }
 
+.mos-img-wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.mos-img-wrap img {
+  height: auto;
+  max-width: 75%;
+  border: 5px;
+  border-radius: 24px;
+}
+
 @media (max-width: 425px) {
 
 .gmap-container { 
